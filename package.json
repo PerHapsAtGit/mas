@@ -1,0 +1,41 @@
+{
+  "name": "monsters-are-scary",
+  "version": "1.0.0",
+  "description": "Monsters Are Scary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PerHapsAtGit/mas"
+  },
+  "main": "index.js",
+  "scripts": {
+    "client": "nodemon src/client/index.js --exec babel-node",
+    "server": "nodemon src/server/index.js --exec babel-node",
+    "test": "mocha --opts mocha.opts --no-deprecation",
+    "test:watch": "npm run test -- --watch"
+  },
+  "serverEndpoint": "http://localhost:8080",
+  "serverPort": "8080",
+  "goldRate": 0.5,
+  "keywords": [
+    "console",
+    "game"
+  ],
+  "author": "y.w",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/node": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/register": "^7.0.0-beta.54",
+    "chai": "^4.1.2",
+    "fetch-mock": "^6.5.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "sinon": "^6.1.3",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-fetch": "^2.1.2"
+  }
+}
