@@ -167,6 +167,7 @@ export class Game {
      * Call backend API for the new room, and try resume game.
      * @param {number} newX - new value for X
      * @param {number} newY - new value for Y
+     * @return {promise}
      */
     enterNewRoom(newX, newY) {
         return getRoomInfo(newX, newY)
